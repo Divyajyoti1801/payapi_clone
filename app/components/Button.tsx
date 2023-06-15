@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ text, onClickHandler, className }) => {
   return (
     <button
       className={twMerge(
-        `p-[14px] border-none rounded-full font-bold`,
+        `py-[14px] border-none rounded-full font-bold`,
         className
       )}
       onClick={onClickHandler}
