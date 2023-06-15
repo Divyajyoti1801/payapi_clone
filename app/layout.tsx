@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={public_sans.className}>
-        <div className="w-[39px] md:[165px] h-full">{children}</div>
+        <div className="w-[100%]">{children}</div>
       </body>
     </html>
   );
