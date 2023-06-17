@@ -16,14 +16,17 @@ const Header = () => {
 
   return (
     <Container className="flex flex-row justify-between items-center pt-[40px]">
-      <div className="relative aspect-square flex justify-center items-center">
+      <Link
+        href="/"
+        className="relative aspect-square flex justify-center items-center"
+      >
         <Image
           src="/images/shared/desktop/logo.svg"
-          width={180}
-          height={180}
+          width={130}
+          height={130}
           alt="PayApi Logo"
         />
-      </div>
+      </Link>
       <div className="flex items-center justify-center md:hidden">
         {!menuToggle && (
           <Image
@@ -70,7 +73,7 @@ const Header = () => {
             </Link>
             <Button
               text="Schedule Demo"
-              className="bg-customDarkPink text-white hover:bg-charmPinkActive active:bg-charmPinkActive transition w-full"
+              className="bg-customDarkPink text-white hover:bg-charmPinkActive hover:text-white active:bg-charmPinkActive transition w-full"
             />
           </div>
         </div>
@@ -98,7 +101,7 @@ const Header = () => {
 
       <Button
         text="Schedule Demo"
-        className="hidden md:block bg-customDarkPink text-white hover:bg-charmPinkActive active:bg-charmPinkActive transition px-18 md:w-[30%]"
+        className="hidden md:block bg-customDarkPink text-white hover:bg-charmPinkActive active:bg-charmPinkActive hover:text-white transition px-18 md:w-[30%]"
       />
     </Container>
   );
