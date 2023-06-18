@@ -3,6 +3,7 @@ import React from "react";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Input from "../components/Input";
 
 const About = () => {
   return (
@@ -49,7 +50,7 @@ const About = () => {
         />
       </div>
       <Container className="w-full  flex flex-col md:flex-row justify-center items-center  lg:justify-space gap-4">
-        <div className="w-full h-full border-t-[2px] md:border-t-[2px] md:border-b-[2px] md:border-grey-300">
+        <div className="w-full h-full border-t-[2px] md:border-b-[2px] md:border-grey-300">
           <p className="w-full md:hidden text-bodyText text-center text-lightSanJuanBlue">
             Team Members
           </p>
@@ -94,6 +95,16 @@ const About = () => {
           financial infrastructure together. At PayAPI, we have diverse
           backgrounds and skills.
         </p>
+      </Container>
+      <Container>
+        <div className="w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5">
+          <h1 className="w-full text-center lg:text-left lg:w-[50%] text-headingMedium text-sanJuanBlue font-serif font-bold">
+            Ready to start?
+          </h1>
+          <div className="w-full lg:w-[50%] flex justify-center lg:justify-end items-center">
+            <Input prompt={false} className="w-full" />
+          </div>
+        </div>
       </Container>
 
       <Footer />
