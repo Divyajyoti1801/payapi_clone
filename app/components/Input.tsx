@@ -10,21 +10,16 @@ interface InputProps {
 
 const Input: React.FC<InputProps> = ({ className, prompt }) => {
   return (
-    <div>
-      <div
-        className={twMerge(
-          `bg-white rounded-full pl-4 flex flex-row justify-between items-center shadow-md`,
-          className
-        )}
-      >
+    <div className={twMerge(`flex flex-col gap-5`, className)}>
+      <div className="w-full bg-white rounded-full pl-4 flex flex-row justify-between items-center shadow-md">
         <input
           type="email"
           placeholder="Enter email address"
-          className="bg-transparent outline-none font-bold font-sans text-sanJuanBlue/70 placeholder:text-lightSanJuanBlue/50"
+          className="bg-transparent outline-none font-semibold text-bodyText font-sans text-sanJuanBlue/70 placeholder:text-lightSanJuanBlue/50 cursor-pointer w-[60%] h-full"
         />
         <Button
           text="Schedule a Demo"
-          className="bg-customDarkPink text-linkWaterWhite px-4 hover:bg-charmPinkActive hover:text-white"
+          className="bg-customDarkPink text-linkWaterWhite px-2 hover:bg-charmPinkActive hover:text-white w-[40%]"
         />
       </div>
       {prompt ?? (

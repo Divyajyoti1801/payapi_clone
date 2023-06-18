@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={twMerge(
-        `py-[14px] rounded-full font-bold ${
+        `py-[10px] rounded-full font-bold text-bodyText ${
           !border && "border-none"
         } transition`,
         className

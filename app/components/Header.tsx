@@ -22,8 +22,8 @@ const Header = () => {
       >
         <Image
           src="/images/shared/desktop/logo.svg"
-          width={130}
-          height={130}
+          width={180}
+          height={180}
           alt="PayApi Logo"
         />
       </Link>
@@ -40,7 +40,7 @@ const Header = () => {
         )}
       </div>
       {menuToggle && (
-        <div className="flex flex-col justify-start items-center md:hidden absolute top-0 right-0 bg-mirageBlue/95 w-[70%] h-[100vh] px-5">
+        <div className="flex flex-col justify-start items-center md:hidden absolute top-0 right-0 bg-mirageBlue/95 w-[70%] h-[100vh] px-5 z-50">
           <div className="flex py-10 w-full justify-end items-center border-b-[1.8px] border-lightSanJuanBlue">
             {menuToggle && (
               <Image
@@ -48,6 +48,7 @@ const Header = () => {
                 width={30}
                 height={30}
                 alt="Close SVG"
+                className="cursor-pointer"
                 onClick={menuClose}
               />
             )}
