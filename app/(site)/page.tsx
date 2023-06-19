@@ -123,7 +123,7 @@ const HomePage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
+        <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-center">
           <div className="w-full lg:w-[50%] flex flex-col justify-center items-center gap-2">
             <h2 className="text-sanJuanBlue text-headingSmall font-serif font-bold w-full text-center lg:text-left">
               Simple UI & UX

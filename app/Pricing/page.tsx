@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../components/Button";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -13,9 +14,9 @@ const Pricing = () => {
           Pricing
         </h1>
       </Container>
-      <Container className="flex flex-col md:flex-row gap-4 justify-center items-center">
-        <div className="flex flex-col gap-5 justify-center items-center">
-          <h1 className="text-customDarkPink text-headingSmall font-bold font-serif">
+      <Container className="flex flex-col md:flex-row gap-10 justify-center items-center">
+        <div className="w-full md:w-auto flex flex-col gap-5 justify-center items-center">
+          <h1 className="w-full text-center text-customDarkPink text-headingSmall font-bold font-serif">
             Free Plan
           </h1>
           <p className="hidden md:block text-center text-bodyText text-lightSanJuanBlue">
@@ -28,7 +29,7 @@ const Pricing = () => {
             </h1>
           </div>
           <div className="w-full flex flex-col justify-center items-center border-b-[2px] border-gray-200 gap-5 pb-5">
-            <div className="w-[50%] flex flex-row justify-between items-center ">
+            <div className="w-[40%] flex flex-row justify-between items-center ">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -41,7 +42,7 @@ const Pricing = () => {
                 Transactions
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -54,7 +55,7 @@ const Pricing = () => {
                 Auth
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -67,39 +68,44 @@ const Pricing = () => {
                 Identity
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]"></div>
               <p className="w-[50%] text-bodyText text-lightSanJuanBlue font-semibold">
                 Investments
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]"></div>
               <p className="w-[50%] text-bodyText text-lightSanJuanBlue  font-semibold">
                 Assets
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]"></div>
               <p className="w-[50%] text-bodyText text-lightSanJuanBlue  font-semibold">
                 Liabilities
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]"></div>
               <p className="w-[50%] text-bodyText text-lightSanJuanBlue font-semibold">
                 Income
               </p>
             </div>
           </div>
+          <Button
+            text="Request Access"
+            border
+            className="border-[2px] text-mirageBlue border-mirageBlue w-[50%] md:w-[80%] hover:bg-mirageBlue hover:text-linkWaterWhite active:bg-mirageBlue active:text-linkWaterWhite"
+          />
         </div>
-        <div className="flex flex-col gap-5 justify-center items-center">
-          <h1 className="text-customDarkPink text-headingSmall font-bold font-serif">
+        <div className="w-full md:w-auto flex flex-col gap-5 justify-center items-center">
+          <h1 className="w-full text-center text-customDarkPink text-headingSmall font-bold font-serif">
             Basic Plan
           </h1>
           <p className="hidden md:block text-center text-bodyText text-lightSanJuanBlue">
-            Launch your project with unlimited requests and no contractual
-            minimums
+            Build and test using our core set of products with up to 100 API
+            requests
           </p>
           <div className="w-full flex text-center items-center py-2 border-b-[2px] border-gray-200">
             <h1 className="w-full text-center text-sanJuanBlue text-headingLarge font-serif font-bold">
@@ -107,7 +113,7 @@ const Pricing = () => {
             </h1>
           </div>
           <div className="w-full flex flex-col justify-center items-center border-b-[2px] border-gray-200 gap-5 pb-5">
-            <div className="w-[50%] flex flex-row justify-between items-center ">
+            <div className="w-[40%] flex flex-row justify-between items-center ">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -120,7 +126,7 @@ const Pricing = () => {
                 Transactions
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -133,7 +139,7 @@ const Pricing = () => {
                 Auth
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -146,7 +152,7 @@ const Pricing = () => {
                 Identity
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -155,11 +161,11 @@ const Pricing = () => {
                   alt="Check"
                 />
               </div>
-              <p className="w-[50%] text-bodyText text-sanJuanBlue font-semibold">
+              <p className="w-[50%] text-bodyText text-mirageBlue font-semibold">
                 Investments
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -168,31 +174,36 @@ const Pricing = () => {
                   alt="Check"
                 />
               </div>
-              <p className="w-[50%] text-bodyText text-sanJuanBlue  font-semibold">
+              <p className="w-[50%] text-bodyText text-mirageBlue  font-semibold">
                 Assets
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]"></div>
               <p className="w-[50%] text-bodyText text-lightSanJuanBlue  font-semibold">
                 Liabilities
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]"></div>
               <p className="w-[50%] text-bodyText text-lightSanJuanBlue font-semibold">
                 Income
               </p>
             </div>
           </div>
+          <Button
+            text="Request Access"
+            border
+            className="border-[2px] text-mirageBlue border-mirageBlue w-[50%] md:w-[80%] hover:bg-mirageBlue hover:text-linkWaterWhite active:bg-mirageBlue active:text-linkWaterWhite"
+          />
         </div>
-        <div className="flex flex-col gap-5 justify-center items-center">
-          <h1 className="text-customDarkPink text-headingSmall font-bold font-serif">
+        <div className="w-full md:w-auto flex flex-col gap-5 justify-center items-center">
+          <h1 className="w-full text-center text-customDarkPink text-headingSmall font-bold font-serif">
             Premium Plan
           </h1>
           <p className="hidden md:block text-center text-bodyText text-lightSanJuanBlue">
-            Get tailored solutions, volume pricing, and dedicated support for
-            your team
+            Build and test using our core set of products with up to 100 API
+            requests
           </p>
           <div className="w-full flex text-center items-center py-2 border-b-[2px] border-gray-200">
             <h1 className="w-full text-center text-sanJuanBlue text-headingLarge font-serif font-bold">
@@ -200,7 +211,7 @@ const Pricing = () => {
             </h1>
           </div>
           <div className="w-full flex flex-col justify-center items-center border-b-[2px] border-gray-200 gap-5 pb-5">
-            <div className="w-[50%] flex flex-row justify-between items-center ">
+            <div className="w-[40%] flex flex-row justify-between items-center ">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -213,7 +224,7 @@ const Pricing = () => {
                 Transactions
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -226,7 +237,7 @@ const Pricing = () => {
                 Auth
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -235,11 +246,11 @@ const Pricing = () => {
                   alt="Check"
                 />
               </div>
-              <p className="w-[50%] text-bodyText text-sanJuanBlue font-semibold">
+              <p className="w-[50%] text-bodyText text-mirageBlue font-semibold">
                 Identity
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -248,11 +259,11 @@ const Pricing = () => {
                   alt="Check"
                 />
               </div>
-              <p className="w-[50%] text-bodyText text-sanJuanBlue font-semibold">
+              <p className="w-[50%] text-bodyText text-mirageBlue font-semibold">
                 Investments
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -261,11 +272,11 @@ const Pricing = () => {
                   alt="Check"
                 />
               </div>
-              <p className="w-[50%] text-bodyText text-sanJuanBlue  font-semibold">
+              <p className="w-[50%] text-bodyText text-mirageBlue font-semibold">
                 Assets
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -274,11 +285,11 @@ const Pricing = () => {
                   alt="Check"
                 />
               </div>
-              <p className="w-[50%] text-bodyText text-sanJuanBlue  font-semibold">
+              <p className="w-[50%] text-bodyText text-mirageBlue  font-semibold">
                 Liabilities
               </p>
             </div>
-            <div className="w-[50%] flex flex-row justify-between items-center">
+            <div className="w-[40%] flex flex-row justify-between items-center">
               <div className="w-[50%]">
                 <Image
                   src="/images/shared/desktop/icon-check.svg"
@@ -287,11 +298,16 @@ const Pricing = () => {
                   alt="Check"
                 />
               </div>
-              <p className="w-[50%] text-bodyText text-sanJuanBlue font-semibold">
+              <p className="w-[50%] text-bodyText text-mirageBlue font-semibold">
                 Income
               </p>
             </div>
           </div>
+          <Button
+            text="Request Access"
+            border
+            className="border-[2px] text-mirageBlue border-mirageBlue w-[50%] md:w-[80%] hover:bg-mirageBlue hover:text-linkWaterWhite active:bg-mirageBlue active:text-linkWaterWhite"
+          />
         </div>
       </Container>
       <Container>
