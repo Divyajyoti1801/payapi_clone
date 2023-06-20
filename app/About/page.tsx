@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
 import Container from "../components/Container";
@@ -80,8 +81,8 @@ const About = () => {
           The Culture
         </h1>
         <p className="w-full md:w-[70%] text-lightSanJuanBlue text-center md:text-left">
-          We strongly believe there's always an opportunity to learn from each
-          other outside of day-to-day work, whether it's company-wide offsites,
+          We strongly believe theres always an opportunity to learn from each
+          other outside of day-to-day work, whether its company-wide offset's ,
           internal hackathons, or co-worker meetups. We always value cross-team
           collaboration and diversity of thought, no matter the job title.
         </p>
