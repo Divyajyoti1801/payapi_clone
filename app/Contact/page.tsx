@@ -34,7 +34,7 @@ const Contact = () => {
   //Not required developing only front-end
 
   return (
-    <div className="relative w-[100%] flex flex-col items-center justify-between h-[100%] bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-auto bg-top lg:bg-right-top gap-20">
+    <div className="relative w-[100%] flex flex-col items-center justify-between h-[100%] bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-auto bg-[center_-10%] lg:bg-[right_top_-80%] gap-20">
       <Header />
       <Container>
         <h1 className="text-headingMedium w-full text-center font-serif text-sanJuanBlue font-semiBold">

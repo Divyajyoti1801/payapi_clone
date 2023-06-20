@@ -11,7 +11,7 @@ import Input from "../components/Input";
 const HomePage = () => {
   const router = useRouter();
   return (
-    <div className="relative w-[100%] flex flex-col items-center justify-between h-[100%] bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-auto bg-top lg:bg-right-top gap-20">
+    <div className="relative w-[100%] flex flex-col items-center justify-between h-[100%] bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-[center_-10%] bg-auto lg:bg-[right_-20%_top_-10%] gap-20">
       <Header />
       <Container className="flex flex-col md:flex-row-reverse justify-center items-center">
         <div className="relative w-[100%] lg:w-[50%] aspect-square ">
@@ -31,7 +31,7 @@ const HomePage = () => {
           </div>
         </div>
       </Container>
-      <Container className="bg-mirageBlue py-[100px] bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-contain bg-center lg:bg-left flex flex-col-reverse lg:flex-row justify-center items-center">
+      <Container className="color py-[100px] bg-no-repeat bg-[center_170%] bg-auto lg:bg-[left_-30%_top_110%] flex flex-col-reverse lg:flex-row justify-center items-center bg-[url('/images/shared/desktop/bg-pattern-circle.svg')]">
         <div className="w-[100%] lg:w-[50%] flex flex-col justify-center items-center">
           <h1 className="w-full text-headingMedium text-center lg:text-left  font-serif text-linkWaterWhite">
             Whom we work with
@@ -102,7 +102,7 @@ const HomePage = () => {
           </div>
         </div>
       </Container>
-      <Container className="flex flex-col justify-center items-center w-full gap-8 bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-auto bg-right">
+      <Container className="flex flex-col justify-center items-center w-full gap-8 bg-none lg:bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-auto bg-[center_right_-50%]">
         <div className="w-full flex flex-col lg:flex-row">
           <div className="relative aspect-square w-full lg:w-[50%]">
             <Image

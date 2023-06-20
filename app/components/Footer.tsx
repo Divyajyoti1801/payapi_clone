@@ -3,7 +3,7 @@ import Link from "next/link";
 import Container from "./Container";
 const Footer = () => {
   return (
-    <Container className="w-full bg-mirageBlue flex flex-col lg:flex-row justify-center lg:justify-between items-center py-[30px] gap-8">
+    <Container className="color w-full bg-[center_120%] lg:bg-[right_-30%_top_20%] bg-[url('/images/shared/desktop/bg-pattern-circle.svg')] bg-no-repeat bg-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center py-[30px] gap-8">
       <div>
         <Image
           src="/images/shared/desktop/logo-light.svg"
